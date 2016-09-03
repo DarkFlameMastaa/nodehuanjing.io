@@ -1,3 +1,4 @@
+var babelpolyfill = require("babel-polyfill");
 var path = require('path');
 var webpack = require('webpack');
 console.log(webpack); //可以看到都安了什么有很多东西
@@ -16,7 +17,7 @@ module.exports = {
             colors: true,
             hot: true
         },
-        port: 3003,
+        port: 3004,
         inline: true
     },
     plugins: [
@@ -26,12 +27,13 @@ module.exports = {
     resolve: {
         extensions: ["", ".js", ".jsx"], //不用写后缀，他会自己依次匹配
     },
-    module: {   //编译es6
+    module: { //编译es6
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
             loader: "babel-loader"
         }]
     }
+
 
 }

@@ -1,0 +1,7 @@
+react的准备工作
+
+1复制atom的地址C:\Users\Administrator\AppData\Local\atom
+2我的电脑   右键   高级系统设置  高级  环境变量  编辑path
+ 在已有的结尾加  ;  然后粘贴C:\Users\Administrator\AppData\Local\atom 再最后加\bin  
+
+然后随便找个地方git bash  敲apm -v 显示版本说明环境配置好了,继续在命令行敲 apm install react 安装react
